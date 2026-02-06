@@ -41,9 +41,8 @@ class CallRecordingService : Service() {
     private var telephonyManager: TelephonyManager? = null
     private var phoneStateListener: PhoneStateListener? = null
 
-    private var callStartTime: Long = 0
+    private var callStartTime: Long = 0  // When dialing starts
     private var phoneNumber: String = ""
-    private var callWasAnswered = false
     private var currentCallId: String = ""
 
     private val tag = "CallRecordingService"
@@ -72,14 +71,9 @@ class CallRecordingService : Service() {
                         Log.d(tag, "CALL_STATE_RINGING: Incoming call ignored.")
                     }
                     TelephonyManager.CALL_STATE_OFFHOOK -> {
-                        if (phoneNumber.isNotEmpty()) {
-                            Log.d(tag, "CALL_STATE_OFFHOOK: In-app call started for $phoneNumber.")
-                            callWasAnswered = true
-                            updateNotification("Monitoring outgoing call to $phoneNumber...")
-                        } else {
-                            Log.d(tag, "CALL_STATE_OFFHOOK: Call from outside app ignored.")
-                            callWasAnswered = false
-                        }
+                        // For outgoing calls, OFFHOOK fires immediately on dial, not on answer
+                        // We now use Call Log to determine actual answer status
+                        Log.d(tag, "CALL_STATE_OFFHOOK: Call in progress")
                     }
                     TelephonyManager.CALL_STATE_IDLE -> {
                         Log.d(tag, "CALL_STATE_IDLE.")
@@ -88,14 +82,67 @@ class CallRecordingService : Service() {
                             val captureNumber = phoneNumber
                             val callId = currentCallId
                             val startTime = callStartTime
-                            val duration = callEndTime - startTime
-                            val status = if (duration > 5000) "Answered" else "Missed"
+                            
+                            // Move everything to background thread to avoid blocking UI/Main thread
+                            executor.execute {
+                                var processedStatus = "Missed"
+                                var processedDuration: Long = 0
 
-                            // 1. Log and Sync IMMEDIATELY (without recording first)
-                            logAndSyncCall(callId, captureNumber, startTime, callEndTime, duration, status, null)
+                                // Wait 1 second to ensure Call Log is updated
+                                Thread.sleep(1000)
+                                
+                                try {
+                                    val projection = arrayOf(
+                                        android.provider.CallLog.Calls.TYPE,
+                                        android.provider.CallLog.Calls.DURATION,
+                                        android.provider.CallLog.Calls.DATE
+                                    )
+                                    // Expand time window: 10 seconds before start to 5 seconds after end
+                                    val selection = "${android.provider.CallLog.Calls.NUMBER} = ? AND ${android.provider.CallLog.Calls.DATE} >= ? AND ${android.provider.CallLog.Calls.DATE} <= ?"
+                                    val selectionArgs = arrayOf(
+                                        captureNumber, 
+                                        (startTime - 10000).toString(),
+                                        (callEndTime + 5000).toString()
+                                    )
+                                    
+                                    Log.d(tag, "Querying Call Log for $captureNumber between ${startTime - 10000} and ${callEndTime + 5000}")
+                                    
+                                    val cursor = contentResolver.query(
+                                        android.provider.CallLog.Calls.CONTENT_URI,
+                                        projection,
+                                        selection,
+                                        selectionArgs,
+                                        "${android.provider.CallLog.Calls.DATE} DESC"
+                                    )
+                                    
+                                    cursor?.use {
+                                        if (it.moveToFirst()) {
+                                            val callType = it.getInt(it.getColumnIndexOrThrow(android.provider.CallLog.Calls.TYPE))
+                                            val durationSeconds = it.getLong(it.getColumnIndexOrThrow(android.provider.CallLog.Calls.DURATION))
+                                            val callDate = it.getLong(it.getColumnIndexOrThrow(android.provider.CallLog.Calls.DATE))
+                                            processedDuration = durationSeconds * 1000 // Convert to milliseconds
+                                            
+                                            processedStatus = when (callType) {
+                                                android.provider.CallLog.Calls.OUTGOING_TYPE -> {
+                                                    if (durationSeconds >= 2) "Answered" else "Missed"
+                                                }
+                                                else -> "Missed"
+                                            }
+                                            
+                                            Log.d(tag, "Call Log Found: number=$captureNumber, type=$callType, duration=${durationSeconds}s, date=$callDate, status=$processedStatus")
+                                        } else {
+                                            Log.w(tag, "No call log entry found for $captureNumber in time window")
+                                        }
+                                    }
+                                } catch (e: Exception) {
+                                    Log.e(tag, "Error reading call log", e)
+                                }
 
-                            // 2. Start polling for recording in background to update local path
-                            executor.execute { 
+                                // 1. Log and Sync IMMEDIATELY (without recording first)
+                                logAndSyncCall(callId, captureNumber, startTime, callEndTime, processedDuration, processedStatus, null)
+
+                                // 2. Start polling for recording in background to update local path
+                                // Note: Already on background thread from outer executor.execute
                                 // Polling for Realme/ODialer: check every 2 seconds up to 5 times (total 10s)
                                 for (i in 1..5) {
                                     Log.d(tag, "Polling for recording (Attempt $i)...")
@@ -103,13 +150,12 @@ class CallRecordingService : Service() {
                                     val recordingUri = findRecordingUri(captureNumber, startTime, callEndTime)
                                     if (recordingUri != null) {
                                         Log.d(tag, "Recording found on attempt $i: $recordingUri")
-                                        updateLocalRecordingPath(callId, captureNumber, startTime, callEndTime, duration, status, recordingUri.toString())
+                                        updateLocalRecordingPath(callId, captureNumber, startTime, callEndTime, processedDuration, processedStatus, recordingUri.toString())
                                         break
                                     }
                                 }
                             }
                         }
-                        callWasAnswered = false
                         phoneNumber = "" // Reset for next call
                         updateNotification("TeleCRM Service Active")
                     }
