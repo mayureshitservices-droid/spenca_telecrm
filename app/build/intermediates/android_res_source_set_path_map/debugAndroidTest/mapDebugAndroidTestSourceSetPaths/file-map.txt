@@ -1,0 +1,5 @@
+com.company.telecrm.test.app-androidTest-0 D:\spenca\telecrm\app\build\generated\res\resValues\androidTest\debug
+com.company.telecrm.test.app-updated_navigation_xml-1 D:\spenca\telecrm\app\build\generated\updated_navigation_xml\debugAndroidTest
+com.company.telecrm.test.app-mergeDebugAndroidTestResources-2 D:\spenca\telecrm\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.company.telecrm.test.app-mergeDebugAndroidTestResources-3 D:\spenca\telecrm\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.company.telecrm.test.app-debugAndroidTest-4 D:\spenca\telecrm\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">spenca water services</string>
+    <string name="whatsapp_title">WhatsApp</string>
+    <string name="send_to">Send to %1$s</string>
+    <string name="call_duration_format">%1$dm %2$ds</string>
+
+    <string-array name="distributor_list">
+        <item>AKASH KATE BARAMATI</item>
+        <item>ANNARAO SOMVANSHI AUSA</item>
+        <item>IMRAN PUNE STAR DISTRIBUTOR</item>
+        <item>MANJUNATH SIR GANGAWATI</item>
+        <item>NAGRAJ YEMUL DATTA ENTERPRISES</item>
+        <item>NARESH BORKAR</item>
+        <item>PIYUSH SHETKAR NANDED</item>
+        <item>RAJSHEKHAR MANAN ENTERPRISES</item>
+        <item>S J JEWELLERS</item>
+        <item>SAGAR RUPNAR MORYA ENTERPRISES</item>
+        <item>SATKAR DISTRIBUTOR BELGAUM</item>
+        <item>SHIVAM GANDHI CHIPLUN</item>
+        <item>TUSHAR PAWAR S K ENTERPRISES</item>
+        <item>VARSHA AGENCY</item>
+        <item>VIKAS GALANDE KARMALA</item>
+        <item>YASHWANT GUND</item>
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Palette (AARRGGBB) -->
+    <color name="ui_background">#FFF8F9FE</color>
+    <color name="ui_surface">#FFFFFFFF</color>
+    <color name="ui_primary">#FF5E5CE6</color>
+    <color name="ui_primary_light">#FFEEEDFD</color>
+    <color name="ui_accent">#FF007AFF</color>
+    <color name="ui_accent_light">#FFE5F2FF</color>
+    <color name="ui_error">#FFFF3B30</color>
+    <color name="ui_error_light">#FFFFE5E5</color>
+    <color name="ui_dialog_dark">#FF1A1C1E</color>
+    <color name="ui_dialog_surface">#FF2A2C2E</color>
+    
+    <!-- Gradients -->
+    <color name="grad_start">#FF98AFFF</color>
+    <color name="grad_end">#FF6BB9FF</color>
+    
+    <!-- Status Tags -->
+    <color name="status_ordered_bg">#FFE3F9E5</color>
+    <color name="status_ordered_text">#FF2BB84B</color>
+    <color name="status_lost_bg">#FFFFE5E5</color>
+    <color name="status_lost_text">#FFFF3B30</color>
+    <color name="status_pending_bg">#FFFFF4E5</color>
+    <color name="status_pending_text">#FFFF9500</color>
+
+    <!-- Typography -->
+    <color name="ui_text_primary">#FF1C1C1E</color>
+    <color name="ui_text_secondary">#FF8E8E93</color>
+    <color name="ui_text_tertiary">#FFC7C7CC</color>
+    
+    <!-- Legacy/System -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="medium_gray">#FF888888</color>
+    <color name="button_dark">#FF333333</color>
+    <color name="background_gray">#FFEEEEEE</color>
+    <color name="dark_gray">#FF666666</color>
+</resources>

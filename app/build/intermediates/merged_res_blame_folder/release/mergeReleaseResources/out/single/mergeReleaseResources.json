@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_more.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_more.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_product_quantity_row.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\product_quantity_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_header_gradient.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\header_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_branding.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_branding.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_bg_dialog.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\bg_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_whatsapp.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_whatsapp.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_item_spinner.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\item_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_date_header.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\date_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_dialpad.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_dialpad.xml"
+    },
+    {
+        "merged": "com.company.telecrm.app-release-34:/layout_call_history_item.xml.flat",
+        "source": "com.company.telecrm.app-main-35:/layout/call_history_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_bg_input_border_white.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\bg_input_border_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_logo.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_dialog_call_action.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\dialog_call_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_button_primary.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\button_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\color_nav_item_color.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\color\\nav_item_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_call.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_call.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_bg_status_chip.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\bg_status_chip.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_dashboard.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_item_spinner_dropdown.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_bg_input_border_primary.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\bg_input_border_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_bg_table_cell.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\bg_table_cell.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_dialog_edit_template.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\dialog_edit_template.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_card_background.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\card_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_call_history_item.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\call_history_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\edit_text_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_bg_input_refined.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\bg_input_refined.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_reminders.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_reminders.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_button_premium.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\button_premium.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_log_action.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_log_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_bg_dialer_input.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\bg_dialer_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\layout_whatsapp_template_item.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\layout\\whatsapp_template_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\drawable_ic_orders.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\drawable\\ic_orders.xml"
+    },
+    {
+        "merged": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-release-34:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\chava\\.gradle\\daemon\\9.1.0\\com.company.telecrm.app-main-35:\\xml\\file_paths.xml"
+    }
+]

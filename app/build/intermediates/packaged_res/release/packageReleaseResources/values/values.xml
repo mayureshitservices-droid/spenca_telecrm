@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="distributor_list">
+        <item>AKASH KATE BARAMATI</item>
+        <item>ANNARAO SOMVANSHI AUSA</item>
+        <item>IMRAN PUNE STAR DISTRIBUTOR</item>
+        <item>MANJUNATH SIR GANGAWATI</item>
+        <item>NAGRAJ YEMUL DATTA ENTERPRISES</item>
+        <item>NARESH BORKAR</item>
+        <item>PIYUSH SHETKAR NANDED</item>
+        <item>RAJSHEKHAR MANAN ENTERPRISES</item>
+        <item>S J JEWELLERS</item>
+        <item>SAGAR RUPNAR MORYA ENTERPRISES</item>
+        <item>SATKAR DISTRIBUTOR BELGAUM</item>
+        <item>SHIVAM GANDHI CHIPLUN</item>
+        <item>TUSHAR PAWAR S K ENTERPRISES</item>
+        <item>VARSHA AGENCY</item>
+        <item>VIKAS GALANDE KARMALA</item>
+        <item>YASHWANT GUND</item>
+    </string-array>
+    <color name="background_gray">#FFEEEEEE</color>
+    <color name="black">#FF000000</color>
+    <color name="button_dark">#FF333333</color>
+    <color name="dark_gray">#FF666666</color>
+    <color name="grad_end">#FF6BB9FF</color>
+    <color name="grad_start">#FF98AFFF</color>
+    <color name="medium_gray">#FF888888</color>
+    <color name="status_lost_bg">#FFFFE5E5</color>
+    <color name="status_lost_text">#FFFF3B30</color>
+    <color name="status_ordered_bg">#FFE3F9E5</color>
+    <color name="status_ordered_text">#FF2BB84B</color>
+    <color name="status_pending_bg">#FFFFF4E5</color>
+    <color name="status_pending_text">#FFFF9500</color>
+    <color name="transparent">#00000000</color>
+    <color name="ui_accent">#FF007AFF</color>
+    <color name="ui_accent_light">#FFE5F2FF</color>
+    <color name="ui_background">#FFF8F9FE</color>
+    <color name="ui_dialog_dark">#FF1A1C1E</color>
+    <color name="ui_dialog_surface">#FF2A2C2E</color>
+    <color name="ui_error">#FFFF3B30</color>
+    <color name="ui_error_light">#FFFFE5E5</color>
+    <color name="ui_primary">#FF5E5CE6</color>
+    <color name="ui_primary_light">#FFEEEDFD</color>
+    <color name="ui_surface">#FFFFFFFF</color>
+    <color name="ui_text_primary">#FF1C1C1E</color>
+    <color name="ui_text_secondary">#FF8E8E93</color>
+    <color name="ui_text_tertiary">#FFC7C7CC</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">spenca water services</string>
+    <string name="call_duration_format">%1$dm %2$ds</string>
+    <string name="send_to">Send to %1$s</string>
+    <string name="whatsapp_title">WhatsApp</string>
+    <style name="DialpadButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="rippleColor">@color/medium_gray</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+    <style name="Theme.Telecrm.DarkDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/ui_text_primary</item>
+        <item name="android:textColorSecondary">@color/ui_text_secondary</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/ui_text_primary</item>
+    </style>
+    <style name="Theme.TelecrmApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ui_primary</item>
+        <item name="colorPrimaryVariant">@color/ui_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/ui_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/ui_background</item>
+        <item name="android:statusBarColor">@color/ui_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/ui_background</item>
+    </style>
+</resources>
